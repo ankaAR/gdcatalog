@@ -41,7 +41,7 @@
 
 
 #
-### Dont delete this lines, are here to help others to add books to the yml.
+### Don't delete this lines, are here to help others to add books to the yml.
 ### Leave it always at the bottom of the file.
 ### You can leave some lines empty, nobody will say anything bad about it.
 ####################################################################
@@ -58,8 +58,8 @@
 #    - "some useful tag"
 #    - "another one"
 #    - "another one if yuou want and keep adding"
-#  posecion: false # that is mostly for me.., just tell me if you have it
-#  leido: false # that is for me also, I have more books than time
+#  posecion: false # that is mostly for me.., just tell me if you have it if you wants.
+#  leido: false # that is for me also, I have more books than time.
 #  formato: #Fisico for physical, PDF for pdf, EPUB for epub, MOBI for mobi, etc. 
 #  notas: "A short description of the book, or a long one if you want"
 ...
