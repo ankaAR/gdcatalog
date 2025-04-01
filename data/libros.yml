@@ -6,7 +6,7 @@
   año: 2000
   editorial: "iUniverse"
   isbn-13: "978-0595155460"
-  cover: assets/images/book_covers/979-8990979604.jpg
+  cover: assets/images/book_covers/978-0595155460.jpg
   genero: "wargaming"
   paginas: 440
   idioma: "English"
@@ -43,6 +43,7 @@
 #
 ### Don't delete this lines, are here to help others to add books to the yml.
 ### Leave it always at the bottom of the file.
+### The ISBN has a dash, write it with the dash, amazon uses it and it could help to parse the data.
 ### You can leave some lines empty, nobody will say anything bad about it.
 ####################################################################
 #- titulo: "Write the title of the book"

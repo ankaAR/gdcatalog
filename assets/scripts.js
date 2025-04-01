@@ -152,7 +152,7 @@ document.querySelectorAll('.tab').forEach(tab => {
         document.getElementById(target).classList.add('active');
 
         // Regenerar la nube de etiquetas para la nueva categoría activa
-        generarNubeDeEtiquetas();
+        generarNubeDeEtiquetas(); // Asegurar que la nube de etiquetas se actualice dinámicamente
     });
 });
 
@@ -173,4 +173,11 @@ document.querySelector('.search').addEventListener('input', function(e) {
     });
     
     mostrarElementos(categoriaActiva, elementosFiltrados);
+});
+
+// Función para alternar el modo oscuro
+document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
 });

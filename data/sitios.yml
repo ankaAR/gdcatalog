@@ -1,5 +1,4 @@
-- id: sitio001
-  nombre: "MDN Web Docs"
+- nombre: "MDN Web Docs"
   url: "https://developer.mozilla.org"
   categoria: "Documentación"
   descripcion: "Recursos para desarrolladores web"

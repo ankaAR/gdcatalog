@@ -155,3 +155,65 @@ body {
 .tag:hover {
     background-color: #0056b3;
 }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .tab {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .tab.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+body.dark-mode .content {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .item {
+    background-color: #2a2a2a;
+    border-color: #444444;
+}
+
+body.dark-mode .search {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-color: #444444;
+}
+
+body.dark-mode .tag {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+body.dark-mode .tag:hover {
+    background-color: #555555;
+}
+
+body.dark-mode .status.success {
+    background-color: #155724;
+}
+
+body.dark-mode .status.error {
+    background-color: #721c24;
+}
+
+body.dark-mode .tag-cloud {
+    background-color: #1e1e1e;
+    border-color: #444444;
+    color: #ffffff;
+}
+
+body.dark-mode .tag-cloud h3 {
+    color: #ffffff;
+}
