@@ -1,0 +1,65 @@
+---
+
+- titulo: "Wargames Handbook"
+  edition: 3
+  autor: "Dunningan, James F."
+  año: 2000
+  editorial: "iUniverse"
+  isbn-13: "978-0595155460"
+  cover: assets/images/book_covers/979-8990979604.jpg
+  genero: "wargaming"
+  paginas: 440
+  idioma: "English"
+  tags:
+    - "wargames"
+    - "board games"
+    - "game design"
+  posecion: true
+  leido: false
+  formato: "PDF"
+  notas: "Describes origins of commercial wargames as well as how to play and design them."
+
+- titulo: "Wargames According to Mark"
+  autor: "Mark Herman"
+  año: 2024
+  editorial: "GMT Games LLC"
+  isbn-13: "979-8990979604"
+  cover: assets/images/book_covers/979-8990979604.jpg
+  genero: "wargaming"
+  paginas: 355
+  idioma: "English"
+  tags:
+    - "wargames"
+    - "board games"
+    - "game design"
+  posecion: false
+  leido: false
+  formato: 
+  notas: "An historian's view of wargaming design"
+
+
+
+
+#
+### Dont delete this lines, are here to help others to add books to the yml.
+### Leave it always at the bottom of the file.
+### You can leave some lines empty, nobody will say anything bad about it.
+####################################################################
+#- titulo: "Write the title of the book"
+#  autor: "write their name or names"
+#  año: 2000
+#  editorial: "Editorial name"
+#  isbn-13: "979-8990979604" #it could be isbn-10 too.
+#  cover: assets/images/book_cvers/isnbnnumber.format #we hate webp
+#  genero: "the genre of the book"
+#  paginas: 100
+#  idioma: "language of the book"
+#  tags:
+#    - "some useful tag"
+#    - "another one"
+#    - "another one if yuou want and keep adding"
+#  posecion: false # that is mostly for me.., just tell me if you have it
+#  leido: false # that is for me also, I have more books than time
+#  formato: #Fisico for physical, PDF for pdf, EPUB for epub, MOBI for mobi, etc. 
+#  notas: "A short description of the book, or a long one if you want"
+...

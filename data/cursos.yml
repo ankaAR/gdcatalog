@@ -1,0 +1,16 @@
+---
+- id: curso001
+  nombre: "Introducción a Python"
+  plataforma: "Coursera"
+  instructor: "Juan Pérez"
+  duracion: "8 semanas"
+  nivel: "Principiante"
+  terminado: false
+  progreso: 65
+  certificado: false
+  url: "https://www.coursera.org/python-intro"
+  temas:
+    - "Variables y tipos de datos"
+    - "Estructuras de control"
+    - "Funciones"
+...

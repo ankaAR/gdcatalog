@@ -1,0 +1,10 @@
+- id: sitio001
+  nombre: "MDN Web Docs"
+  url: "https://developer.mozilla.org"
+  categoria: "Documentación"
+  descripcion: "Recursos para desarrolladores web"
+  tags:
+    - "javascript"
+    - "html"
+    - "css"
+  fecha_añadido: "2023-05-15"

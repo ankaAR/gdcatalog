@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Colecciones</title>
+    <!-- Llamada al archivo CSS externo -->
+    <link rel="stylesheet" href="assets/main.css">
+    <!-- llamada a la librería de js-yaml para cargar los datos desde un archivo .yaml -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Visualizador de recursos para diseño de juegos de mesa, estrategia, rol y megajuegos</h1>
+        
+        <div id="status"></div>
+        
+        <div class="tabs">
+            <button class="tab active" data-target="libros">Libros</button>
+            <button class="tab" data-target="cursos">Cursos</button>
+            <button class="tab" data-target="sitios">Sitios Web</button>
+        </div>
+        
+        <div class="filter">
+            <input type="text" class="search" placeholder="Buscar...">
+        </div>
+        
+        <!-- Añadir contenedor para la nube de etiquetas -->
+        <div class="tag-cloud">
+            <h3>Etiquetas Populares</h3>
+            <div id="tags-container">
+                <!-- Las etiquetas se generarán dinámicamente -->
+            </div>
+        </div>
+        
+        <div id="libros" class="content active">
+            <h2>Libros</h2>
+            <div class="items-container">
+                <div class="loading">Esperando carga de datos...</div>
+            </div>
+        </div>
+        
+        <div id="cursos" class="content">
+            <h2>Cursos</h2>
+            <div class="items-container">
+                <div class="loading">Esperando carga de datos...</div>
+            </div>
+        </div>
+        
+        <div id="sitios" class="content">
+            <h2>Sitios Web</h2>
+            <div class="items-container">
+                <div class="loading">Esperando carga de datos...</div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
+
+<!--la vida es un yml-->
