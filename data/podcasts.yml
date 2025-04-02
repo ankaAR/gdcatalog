@@ -1,0 +1,46 @@
+---
+
+- title: "Podcast Title 1"
+  host: "Host Name"
+  Idioma: "Spanish"
+  ongoing: true
+  temporadas: 2
+  episodes: 30
+  plataforma:
+    - "Spotify"
+    - "Apple Podcasts"
+  url:
+    - "https://example.com/podcast1"
+    - "https://example.com/anotherlink"
+  tags:
+    - "tag1"
+    - "tag2"
+  description: "A brief description of the podcast."
+  fecha_actualizacion: "2025-01-01"
+
+
+########################################################
+###Don't delete this lines, are here to help others to add books to the yml.
+###Leave it always at the bottom of the file.
+###Try to provide a link to the podcast, check if they have more than one link,
+##sometimes they have something that is not from a big corporation.
+###You can leave some lines empty, nobody will say anything bad about it.
+########################################################
+#  - title: "Podcast Title 1"
+#  host: "Host Name"
+#  Idioma: "Spanish, English, etc"
+#  ongoing: true
+#  temporadas: 2
+#  episodes: 30 #check if they have a number of episodes, or if they are ongoing.
+#  plataforma:
+#    - "Spotify"
+#    - "Apple Podcasts"
+#  url:
+#    - "https://example.com/podcast1"
+#    - "https://example.com/anotherlink"
+#  tags:
+#    - "tag1"
+#    - "tag2"
+#  description: "A brief description of the podcast."
+#  fecha_actualizacion: "2025-01-01" #the last time you checked or updated this info.
+...

@@ -8,6 +8,10 @@ For now we have the following sections:
 - Cursos
 - Sitios web
 
+ToDo: I will add 2 more sections:
+- Podcasts
+- Videchannels
+
 Please feel free to add any resources you think are useful. You can do this by forking the repository and creating a pull request, or by opening an issue with your suggestions.
 
 If you want and you are interested to contribute, please do it using the following format:

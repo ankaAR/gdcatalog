@@ -76,6 +76,24 @@ body {
 .item-property span {
     font-weight: bold;
 }
+
+.item-property a {
+    color: #007bff; /* Default blue for light mode */
+    text-decoration: none;
+}
+
+.item-property a:hover {
+    text-decoration: underline;
+}
+
+body.dark-mode .item-property a {
+    color: #ffa500; /* Orange for dark mode */
+}
+
+body.dark-mode .item-property a:hover {
+    color: #ffcc66; /* Lighter orange on hover for dark mode */
+}
+
 .status {
     margin: 10px 0;
     padding: 10px;

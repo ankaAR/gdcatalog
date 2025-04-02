@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizador de Colecciones</title>
+    <title>Catalogo de recursos para diseñadores de Juegos de Mesa</title>
     <!-- Llamada al archivo CSS externo -->
     <link rel="stylesheet" href="assets/main.css">
     <!-- llamada a la librería de js-yaml para cargar los datos desde un archivo .yaml -->
@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Visualizador de recursos para diseño de juegos de mesa, estrategia, rol y megajuegos</h1>
+        <h1>Catalogo de recursos para diseño de juegos de mesa, estrategia, rol y megajuegos</h1>
         
         <!-- Botón para cambiar a modo oscuro -->
         <button id="dark-mode-toggle" class="button">Modo Oscuro</button>
@@ -22,6 +22,8 @@
             <button class="tab active" data-target="libros">Libros</button>
             <button class="tab" data-target="cursos">Cursos</button>
             <button class="tab" data-target="sitios">Sitios Web</button>
+            <button class="tab" data-target="podcasts">Podcasts</button>
+            <button class="tab" data-target="videochannels">Video Channels</button>
         </div>
         
         <div class="filter">
@@ -52,6 +54,22 @@
         
         <div id="sitios" class="content">
             <h2>Sitios Web</h2>
+            <div class="items-container">
+                <div class="loading">Esperando carga de datos...</div>
+            </div>
+        </div>
+        
+        <!-- Nueva sección para Podcasts -->
+        <div id="podcasts" class="content">
+            <h2>Podcasts</h2>
+            <div class="items-container">
+                <div class="loading">Esperando carga de datos...</div>
+            </div>
+        </div>
+        
+        <!-- Nueva sección para Video Channels -->
+        <div id="videochannels" class="content">
+            <h2>Video Channels</h2>
             <div class="items-container">
                 <div class="loading">Esperando carga de datos...</div>
             </div>

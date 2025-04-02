@@ -2,7 +2,9 @@
 const datos = {
     libros: [],
     cursos: [],
-    sitios: []
+    sitios: [],
+    podcasts: [],
+    videochannels: []
 };
 
 // Función para mostrar mensajes de estado
@@ -75,9 +77,17 @@ function mostrarElementos(categoria, elementos) {
         for (const [clave, valor] of Object.entries(elemento)) {
             if (clave === 'cover') continue; // Omitir la propiedad 'cover' en los detalles
             if (Array.isArray(valor)) {
-                contenido += `<div class="item-property"><span>${clave}:</span> ${valor.join(', ')}</div>`;
+                if (clave === 'url') {
+                    // Renderizar URLs como enlaces clickeables
+                    contenido += `<div class="item-property"><span>${clave}:</span> ${valor.map(url => `<a href="${url}" target="_blank">${url}</a>`).join(', ')}</div>`;
+                } else {
+                    contenido += `<div class="item-property"><span>${clave}:</span> ${valor.join(', ')}</div>`;
+                }
             } else if (typeof valor === 'boolean') {
                 contenido += `<div class="item-property"><span>${clave}:</span> ${valor ? 'Sí' : 'No'}</div>`;
+            } else if (clave === 'url') {
+                // Renderizar una sola URL como enlace clickeable
+                contenido += `<div class="item-property"><span>${clave}:</span> <a href="${valor}" target="_blank">${valor}</a></div>`;
             } else {
                 contenido += `<div class="item-property"><span>${clave}:</span> ${valor}</div>`;
             }
@@ -98,9 +108,16 @@ function generarNubeDeEtiquetas() {
     const categoriaActiva = document.querySelector('.tab.active').getAttribute('data-target');
     const elementos = datos[categoriaActiva] || [];
 
-    // Extraer etiquetas de la categoría activa
-    const todasLasEtiquetas = elementos.flatMap(item => item.tags || []);
-    
+    // Extraer etiquetas o temas según la categoría activa
+    const todasLasEtiquetas = elementos.flatMap(item => {
+        if (categoriaActiva === 'cursos') {
+            return item.temas || []; // Usar 'temas' como etiquetas para cursos
+        } else if (categoriaActiva === 'podcasts' || categoriaActiva === 'videochannels') {
+            return item.tags || []; // Usar 'tags' para podcasts y video channels
+        }
+        return item.tags || []; // Usar 'tags' para otras categorías
+    });
+
     const conteoEtiquetas = todasLasEtiquetas.reduce((conteo, etiqueta) => {
         conteo[etiqueta] = (conteo[etiqueta] || 0) + 1;
         return conteo;
@@ -128,7 +145,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const rutas = {
         libros: "data/libros.yml",
         cursos: "data/cursos.yml",
-        sitios: "data/sitios.yml"
+        sitios: "data/sitios.yml",
+        podcasts: "data/podcasts.yml", // Nueva fuente de datos
+        videochannels: "data/videochannels.yml" // Nueva fuente de datos
     };
 
     Object.keys(rutas).forEach(categoria => {

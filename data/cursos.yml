@@ -1,15 +1,45 @@
 ---
-- nombre: "Introducción a Python"
-  plataforma: "Coursera"
-  instructor: "Juan Pérez"
-  duracion: "8 semanas"
-  nivel: "Principiante"
+- nombre: "608 Game Design"
+  plataforma: "MIT OpenCourseWare"
+  instructor: 
+              - "Philip B. Tan"
+              - "Richard Eberhardt"
+  duracion: "78 hs"
+  costo: "gratuito"
+  nivel: "Undergraduate"
+  language: "English"
   terminado: false
-  progreso: 65
   certificado: false
-  url: "https://www.coursera.org/python-intro"
+  url: "https://ocw.mit.edu/courses/cms-608-game-design-spring-2014/"
+  descripcion: "No tengo mucho que añadir aca, es un curso que agregue como placeholder, pero es un curso de verdad"
   temas:
-    - "Variables y tipos de datos"
-    - "Estructuras de control"
-    - "Funciones"
+    - "Reglas"
+    - "Historia"
+    - "Diseño"
+
+#
+### Don't delete this lines, are here to help others to add courses to the yml.
+### Leave it always at the bottom of the file.
+### Try to provide a link to the course, or some way to contact the instructor.
+### You can leave some lines empty, nobody will say anything bad about it.
+####################################################################
+#- nombre: "name of the course"
+#  plataforma: "where is the course it could be offline or online"
+#  instructor: 
+#              - "Name of the instructor"
+#              - "As many as they are"
+#  duracion: "length of the course, it could be in hours or weeks"
+#  costo: "it is free or paid?"
+#  nivel: "do you require some previous knowledge?"
+#  language: "Spanish, English, etc"
+#  terminado: false #that is more for me
+#  certificado: false #does it provide a certificate?
+#  url: "url to the course or some contact information"
+#  descripcion: "A brief description of the course."
+#  temas:
+#    - "what is the course about?"
+#    - "it works as tags"
+#    - "keep them short"
+#    - "maybe someone wrote another tag in the past"
+#    - "and you can add it here"
 ...

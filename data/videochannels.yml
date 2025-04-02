@@ -1,0 +1,11 @@
+---
+- nombre: "Adam in Wales - Board Game Design"
+  url: "https://www.youtube.com/@AdaminWales"
+  idioma: "Ingles"
+  ongoing: true
+  tags:
+    - "game design"
+    - "education"
+  descripcion: "A channel about tabletop game design from Adam Porter, game designer."
+  fecha_añadido: "2023-06-01"
+...

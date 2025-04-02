@@ -37,6 +37,8 @@
   formato: 
   notas: "An historian's view of wargaming design"
 
+- titulo:
+
 
 
 
@@ -55,7 +57,7 @@
 #  genero: "the genre of the book"
 #  paginas: 100
 #  idioma: "language of the book"
-#  tags:
+#  tags:  #Some tags could be a little obvious, It is because I use this yaml with other books...
 #    - "some useful tag"
 #    - "another one"
 #    - "another one if yuou want and keep adding"
