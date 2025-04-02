@@ -1,9 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f5f5f5;
 }
+
+h1, h2, h3, p, span, a, button, input {
+    font-family: inherit;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -46,13 +56,31 @@ body {
 .item-cover {
     flex-shrink: 0;
     margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100px;
+    height: 150px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
 }
 
 .item-cover img {
-    max-width: 100px;
-    max-height: 150px;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 5px;
     object-fit: cover;
+}
+
+.item-cover.no-cover {
+    background-color: #e0e0e0;
+    color: #555;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 .item-details {
@@ -72,13 +100,14 @@ body {
 }
 .item-property {
     margin-bottom: 5px;
+    font-weight: normal;
 }
 .item-property span {
     font-weight: bold;
 }
 
 .item-property a {
-    color: #007bff; /* Default blue for light mode */
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -87,11 +116,11 @@ body {
 }
 
 body.dark-mode .item-property a {
-    color: #ffa500; /* Orange for dark mode */
+    color: #ffa500;
 }
 
 body.dark-mode .item-property a:hover {
-    color: #ffcc66; /* Lighter orange on hover for dark mode */
+    color: #ffcc66;
 }
 
 .status {
@@ -175,7 +204,7 @@ body.dark-mode .item-property a:hover {
 }
 
 body.dark-mode {
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: #ffffff;
 }
 
@@ -234,4 +263,27 @@ body.dark-mode .tag-cloud {
 
 body.dark-mode .tag-cloud h3 {
     color: #ffffff;
+}
+
+#dark-mode-toggle {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #555;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

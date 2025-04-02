@@ -5,16 +5,16 @@
   autor: "Dunningan, James F."
   año: 2000
   editorial: "iUniverse"
-  isbn-13: "978-0595155460"
+  isbn-13: 978-0595155460
   cover: assets/images/book_covers/978-0595155460.jpg
-  genero: "wargaming"
+  genero: wargaming
   paginas: 440
-  idioma: "English"
+  idioma: English
   tags:
     - "wargames"
     - "board games"
     - "game design"
-  posecion: true
+  posesión: true
   leido: false
   formato: "PDF"
   notas: "Describes origins of commercial wargames as well as how to play and design them."
@@ -32,12 +32,29 @@
     - "wargames"
     - "board games"
     - "game design"
-  posecion: false
+  posesión: false
   leido: false
   formato: 
   notas: "An historian's view of wargaming design"
 
-- titulo:
+- titulo: "Tabletop: Analog Game Design"
+  autor: "Drew Davidson"
+  año: 2011
+  editorial: 
+  isbn-13: 978-1257870608
+  cover:
+  genero:
+  paginas:
+  idioma:
+  tags:
+    - "game design"
+    - "board games"
+    - "analog games"
+    - "tabletop games"
+  posesión: true
+  leido: false
+  formato: PDF
+  notas: "Parte de la curricula del curso del MIT sobre diseño de juegos de mesa."
 
 
 

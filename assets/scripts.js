@@ -42,7 +42,7 @@ async function cargarYAML(categoria, ruta) {
         
         // Mostrar elementos
         mostrarElementos(categoria, datos[categoria]);
-        mostrarEstado(`Datos de ${categoria} cargados correctamente`, 'success');
+        mostrarEstado(`Datos cargados correctamente`, 'success');
     } catch (error) {
         console.error(`Error cargando ${categoria}:`, error);
         mostrarEstado(`Error al cargar ${categoria}: ${error.message}`, 'error');
@@ -68,28 +68,37 @@ function mostrarElementos(categoria, elementos) {
         // Crear HTML para cada propiedad
         let contenido = '';
 
-        // Mostrar portada si existe
-        if (elemento.cover) {
-            contenido += `<div class="item-cover"><img src="${elemento.cover}" alt="${elemento.titulo}" /></div>`;
+        // Mostrar portada solo para libros, de lo contrario mostrar un marcador de "No Cover"
+        if (categoria === 'libros') {
+            if (elemento.cover) {
+                contenido += `<div class="item-cover"><img src="${elemento.cover}" alt="${elemento.titulo}" /></div>`;
+            } else {
+                contenido += `<div class="item-cover no-cover">No Cover</div>`;
+            }
         }
 
         contenido += '<div class="item-details">';
         for (const [clave, valor] of Object.entries(elemento)) {
             if (clave === 'cover') continue; // Omitir la propiedad 'cover' en los detalles
+
+            // Capitalizar la clave
+            const claveCapitalizada = clave.charAt(0).toUpperCase() + clave.slice(1);
+
             if (Array.isArray(valor)) {
                 if (clave === 'url') {
                     // Renderizar URLs como enlaces clickeables
-                    contenido += `<div class="item-property"><span>${clave}:</span> ${valor.map(url => `<a href="${url}" target="_blank">${url}</a>`).join(', ')}</div>`;
+                    contenido += `<div class="item-property"><span>${claveCapitalizada}:</span> ${valor.map(url => `<a href="${url}" target="_blank">${url}</a>`).join(', ')}</div>`;
                 } else {
-                    contenido += `<div class="item-property"><span>${clave}:</span> ${valor.join(', ')}</div>`;
+                    contenido += `<div class="item-property"><span>${claveCapitalizada}:</span> ${valor.join(', ')}</div>`;
                 }
             } else if (typeof valor === 'boolean') {
-                contenido += `<div class="item-property"><span>${clave}:</span> ${valor ? 'Sí' : 'No'}</div>`;
+                contenido += `<div class="item-property"><span>${claveCapitalizada}:</span> ${valor ? 'Sí' : 'No'}</div>`;
             } else if (clave === 'url') {
                 // Renderizar una sola URL como enlace clickeable
-                contenido += `<div class="item-property"><span>${clave}:</span> <a href="${valor}" target="_blank">${valor}</a></div>`;
+                contenido += `<div class="item-property"><span>${claveCapitalizada}:</span> <a href="${valor}" target="_blank">${valor}</a></div>`;
             } else {
-                contenido += `<div class="item-property"><span>${clave}:</span> ${valor}</div>`;
+                // Mostrar "Sin datos" si el valor es null, undefined o vacío
+                contenido += `<div class="item-property"><span>${claveCapitalizada}:</span> ${valor || 'Sin datos'}</div>`;
             }
         }
         contenido += '</div>';
@@ -146,8 +155,8 @@ window.addEventListener('DOMContentLoaded', () => {
         libros: "data/libros.yml",
         cursos: "data/cursos.yml",
         sitios: "data/sitios.yml",
-        podcasts: "data/podcasts.yml", // Nueva fuente de datos
-        videochannels: "data/videochannels.yml" // Nueva fuente de datos
+        podcasts: "data/podcasts.yml", // vamos a ver si esto funciona
+        videochannels: "data/videochannels.yml" // al menos tengo el lugar donde ponerlo
     };
 
     Object.keys(rutas).forEach(categoria => {
@@ -155,7 +164,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // Generar la nube de etiquetas después de cargar los datos
-    setTimeout(generarNubeDeEtiquetas, 1000); // Esperar a que los datos se carguen
+    setTimeout(generarNubeDeEtiquetas, 1000); // un tiempo para la carga de datos
 });
 
 // Manejar cambios de pestaña
@@ -171,7 +180,7 @@ document.querySelectorAll('.tab').forEach(tab => {
         document.getElementById(target).classList.add('active');
 
         // Regenerar la nube de etiquetas para la nueva categoría activa
-        generarNubeDeEtiquetas(); // Asegurar que la nube de etiquetas se actualice dinámicamente
+        generarNubeDeEtiquetas();
     });
 });
 
@@ -194,7 +203,7 @@ document.querySelector('.search').addEventListener('input', function(e) {
     mostrarElementos(categoriaActiva, elementosFiltrados);
 });
 
-// Función para alternar el modo oscuro
+// Función para alternar el modo oscuro/claro
 document.getElementById('dark-mode-toggle').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     const toggleButton = document.getElementById('dark-mode-toggle');
