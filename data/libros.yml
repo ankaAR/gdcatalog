@@ -6,10 +6,10 @@
   año: 2000
   editorial: "iUniverse"
   isbn-13: 978-0595155460
-  cover: assets/images/book_covers/978-0595155460.jpg
+  cover: true
   genero: wargaming
   paginas: 440
-  idioma: English
+  idioma: Ingles
   tags:
     - "wargames"
     - "board games"
@@ -24,10 +24,10 @@
   año: 2024
   editorial: "GMT Games LLC"
   isbn-13: "979-8990979604"
-  cover: assets/images/book_covers/979-8990979604.jpg
+  cover: true
   genero: "wargaming"
   paginas: 355
-  idioma: "English"
+  idioma: Ingles
   tags:
     - "wargames"
     - "board games"
@@ -42,10 +42,10 @@
   año: 2011
   editorial: 
   isbn-13: 978-1257870608
-  cover:
+  cover: true
   genero:
   paginas:
-  idioma:
+  idioma: Ingles
   tags:
     - "game design"
     - "board games"
@@ -58,81 +58,100 @@
 
 - titulo: "A Gamut of Games"
   autor: "Sid Sackson"
-  año: 
+  año: 2011
   editorial: 
   isbn-13: "978-0486273471"
-  cover: 
+  cover: true
   genero: 
-  paginas: 
-  idioma: 
+  paginas: 240
+  idioma: Ingles
   tags: 
     - 
-  posesión: 
-  leido: 
-  formato: 
+  posesión: false
+  leido: false
+  formato: Paperback
   notas: 
 
 - titulo: "A Theory of Fun"
+  edition: 2
   autor: "Raph Koster"
-  año: 
-  editorial: 
-  isbn-13: "978-1932111972"
-  cover: 
+  año: 2013
+  editorial: O'Reilly Media
+  isbn-13: "978-1449363215"
+  cover: true
   genero: 
-  paginas: 
-  idioma: 
+  paginas: 297
+  idioma: Ingles
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
 - titulo: "Achievement Relocated"
   autor: "Geoff Engelstein"
   año: 
-  editorial: 
+  editorial: The MIT Press
   isbn-13: "978-0262043533"
-  cover: 
+  cover: true
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
-- titulo: "Board Game Design Advice from the Best in the Industry"
+- titulo: "Board Game Design Advice from the Best in the World"
   autor: "Gabe Barrett"
-  año: 
-  editorial: 
-  isbn-13: "978-1094914244"
-  cover: 
+  año: 2020
+  editorial: Barrett Publishing
+  isbn-13: "979-8662973190"
+  cover: true
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
+  colección: "Board Game Design Advice"
+
+- titulo: "Board Game Design Advice from the Best in the World, the 2nd Edition"
+  autor: "Gabe Barrett"
+  año: 2019
+  editorial: Barrett Publishing
+  isbn-13: "978-1094914244"
+  cover: true
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: false
+  leido: false
+  formato: 
+  notas: 
+  colección: "Board Game Design Advice"
 
 - titulo: "Board Game Designers Guide to Getting Published"
   autor: "Joe Slack"
   año: 
   editorial: 
   isbn-13: "978-1775189220"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -143,14 +162,14 @@
   año: 
   editorial: 
   isbn-13: "978-1138365490"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -159,14 +178,14 @@
   año: 
   editorial: 
   isbn-13: "978-1032813448"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -177,14 +196,14 @@
   año: 
   editorial: 
   isbn-13: "978-0262542692"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -193,14 +212,14 @@
   año: 
   editorial: 
   isbn-13: "978-8826051895"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -209,14 +228,14 @@
   año: 
   editorial: 
   isbn-13: "979-8320754154"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -225,14 +244,14 @@
   año: 
   editorial: 
   isbn-13: "978-1138098770"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -241,14 +260,14 @@
   año: 
   editorial: 
   isbn-13: "978-1032034935"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -257,14 +276,14 @@
   año: 
   editorial: 
   isbn-13: "978-1538144015"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -273,14 +292,14 @@
   año: 
   editorial: 
   isbn-13: "978-0996268639"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -289,14 +308,14 @@
   año: 
   editorial: 
   isbn-13: "978-1936781041"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -305,14 +324,14 @@
   año: 
   editorial: 
   isbn-13: "978-1648768972"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -321,14 +340,14 @@
   año: 
   editorial: 
   isbn-13: "978-0262240451"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -337,14 +356,14 @@
   año: 
   editorial: 
   isbn-13: "978-1032119373"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -353,14 +372,14 @@
   año: 
   editorial: 
   isbn-13: "978-1138638716"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -369,14 +388,14 @@
   año: 
   editorial: 
   isbn-13: "978-1138632059"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -385,14 +404,14 @@
   año: 
   editorial: 
   isbn-13: "978-1777517922"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -401,14 +420,14 @@
   año: 
   editorial: 
   isbn-13: "978-1032400754"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -417,14 +436,14 @@
   año: 
   editorial: 
   isbn-13: "978-0999586303"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -433,14 +452,14 @@
   año: 
   editorial: 
   isbn-13: "978-0262018968"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -449,14 +468,14 @@
   año: 
   editorial: 
   isbn-13: "978-1981253395"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -465,14 +484,14 @@
   año: 
   editorial: 
   isbn-13: "978-1648582622"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 
@@ -481,14 +500,14 @@
   año: 
   editorial: 
   isbn-13: "978-1032041865"
-  cover: 
+  cover: false
   genero: 
   paginas: 
   idioma: 
   tags: 
     - 
-  posesión: 
-  leido: 
+  posesión: false
+  leido: false
   formato: 
   notas: 
 

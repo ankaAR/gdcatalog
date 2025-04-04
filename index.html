@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo de recursos para diseñadores de Juegos de Mesa</title>
-    <!-- Llamada al archivo CSS externo -->
     <link rel="stylesheet" href="assets/main.css">
-    <!-- Importar la fuente Comfortaa desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- llamada a la librería de js-yaml para cargar los datos desde un archivo .yaml -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
 <body>
@@ -21,7 +18,7 @@
         <div id="status"></div>
         
         <div class="tabs">
-            <button class="tab active" data-target="libros">Libros (mostrando 0 de 0)</button>
+            <button class="tab active" data-target="libros">Libros</button>
             <button class="tab" data-target="cursos">Cursos</button>
             <button class="tab" data-target="sitios">Sitios Web</button>
             <button class="tab" data-target="podcasts">Podcasts</button>
@@ -32,11 +29,10 @@
             <input type="text" class="search" placeholder="Buscar...">
         </div>
         
-        <!-- Añadir contenedor para la nube de etiquetas -->
+        <!-- Contenedor para la nube de etiquetas -->
         <div class="tag-cloud">
             <h3>Etiquetas Populares</h3>
             <div id="tags-container">
-                <!-- Las etiquetas se generarán dinámicamente -->
             </div>
         </div>
         
@@ -69,7 +65,7 @@
             </div>
         </div>
         
-        <!-- Nueva sección para Video Channels -->
+        <!-- Nueva sección para Videochannels -->
         <div id="videochannels" class="content">
             <h2>Video Channels</h2>
             <div class="items-container">

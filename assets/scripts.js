@@ -8,12 +8,12 @@ const datos = {
 };
 
 // Función para mostrar mensajes de estado
+// Ocultar después de 5 segundos si es un éxito
 function mostrarEstado(mensaje, tipo) {
     const statusDiv = document.getElementById('status');
     statusDiv.textContent = mensaje;
     statusDiv.className = `status ${tipo}`;
     
-    // Ocultar después de 5 segundos si es un éxito
     if (tipo === 'success') {
         setTimeout(() => {
             statusDiv.textContent = '';
@@ -61,8 +61,27 @@ function actualizarConteoLibros(categoria, total, filtrados) {
     }
 }
 
+// Función para encontrar la portada dinámicamente
+async function obtenerRutaDeCover(isbn) {
+    const extensiones = ['jpeg', 'jpg', 'png', 'webp'];
+    const basePath = 'assets/images/book_covers/';
+    
+    for (const ext of extensiones) {
+        const ruta = `${basePath}${isbn}.${ext}`;
+        try {
+            const respuesta = await fetch(ruta, { method: 'HEAD' });
+            if (respuesta.ok) {
+                return ruta;
+            }
+        } catch (error) {
+            console.warn(`No se encontró portada: ${ruta}`);
+        }
+    }
+    return null; // No se encontró ninguna imagen
+}
+
 // Función para mostrar los elementos en la interfaz
-function mostrarElementos(categoria, elementos) {
+async function mostrarElementos(categoria, elementos) {
     const contenedor = document.querySelector(`#${categoria} .items-container`);
     contenedor.innerHTML = '';
     
@@ -74,17 +93,22 @@ function mostrarElementos(categoria, elementos) {
 
     actualizarConteoLibros(categoria, datos[categoria].length, elementos.length);
 
-    elementos.forEach(elemento => {
+    for (const elemento of elementos) {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'item';
 
         // Crear HTML para cada propiedad
         let contenido = '';
 
-        // Mostrar portada solo para libros, de lo contrario mostrar un marcador de "No Cover"
+        // Mostrar portada solo para libros, buscar dinámicamente si cover es true
         if (categoria === 'libros') {
-            if (elemento.cover) {
-                contenido += `<div class="item-cover"><img src="${elemento.cover}" alt="${elemento.titulo}" /></div>`;
+            if (elemento.cover === true && elemento['isbn-13']) {
+                const rutaCover = await obtenerRutaDeCover(elemento['isbn-13']);
+                if (rutaCover) {
+                    contenido += `<div class="item-cover"><img src="${rutaCover}" alt="${elemento.titulo}" /></div>`;
+                } else {
+                    contenido += `<div class="item-cover no-cover">No Cover</div>`;
+                }
             } else {
                 contenido += `<div class="item-cover no-cover">No Cover</div>`;
             }
@@ -118,7 +142,7 @@ function mostrarElementos(categoria, elementos) {
 
         itemDiv.innerHTML = contenido;
         contenedor.appendChild(itemDiv);
-    });
+    }
 }
 
 // Función para generar la nube de etiquetas
@@ -135,7 +159,7 @@ function generarNubeDeEtiquetas() {
         if (categoriaActiva === 'cursos') {
             return item.temas || []; // Usar 'temas' como etiquetas para cursos
         } else if (categoriaActiva === 'podcasts' || categoriaActiva === 'videochannels') {
-            return item.tags || []; // Usar 'tags' para podcasts y video channels
+            return item.tags || []; // Usar 'tags' para podcasts y videochannels
         }
         return item.tags || []; // Usar 'tags' para otras categorías
     }).filter(etiqueta => etiqueta); // Ignorar etiquetas nulas o vacías
@@ -202,18 +226,35 @@ document.querySelector('.search').addEventListener('input', function(e) {
     const termino = e.target.value.toLowerCase();
     const categoriaActiva = document.querySelector('.tab.active').getAttribute('data-target');
     
-    const elementosFiltrados = datos[categoriaActiva].filter(elemento => {
-        return Object.values(elemento).some(valor => {
+    const elementos = datos[categoriaActiva];
+    const contenedor = document.querySelector(`#${categoriaActiva} .items-container`);
+    
+    let visibleCount = 0; // Recuento de elementos visibles
+
+    elementos.forEach((elemento, index) => {
+        const itemDiv = contenedor.children[index];
+        const coincide = Object.entries(elemento).some(([clave, valor]) => {
             if (typeof valor === 'string') {
                 return valor.toLowerCase().includes(termino);
             } else if (Array.isArray(valor)) {
                 return valor.some(v => String(v).toLowerCase().includes(termino));
+            } else if (valor && typeof valor === 'object') {
+                return Object.values(valor).some(v => String(v).toLowerCase().includes(termino));
             }
             return String(valor).toLowerCase().includes(termino);
         });
+        if (coincide) {
+            itemDiv.classList.remove('hidden');
+            itemDiv.style.display = 'flex'; // Asegurarse de que se muestre correctamente
+            visibleCount++;
+        } else {
+            itemDiv.classList.add('hidden');
+            itemDiv.style.display = 'none'; // Ocultar el elemento que no coincide
+        }
     });
-    
-    mostrarElementos(categoriaActiva, elementosFiltrados);
+
+    // Actualizar el conteo de libros después de filtrar
+    actualizarConteoLibros(categoriaActiva, elementos.length, visibleCount);
 });
 
 // Función para alternar el modo oscuro/claro
