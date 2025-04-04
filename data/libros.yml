@@ -1,6 +1,6 @@
 ---
 
-- titulo: "Wargames Handbook"
+- titulo: "Wargames Handbook, Third Edition: How to Play and Design Commercial and Professional Wargames"
   edition: 3
   autor: "Dunningan, James F."
   año: 2000
@@ -56,8 +56,441 @@
   formato: PDF
   notas: "Parte de la curricula del curso del MIT sobre diseño de juegos de mesa."
 
+- titulo: "A Gamut of Games"
+  autor: "Sid Sackson"
+  año: 
+  editorial: 
+  isbn-13: "978-0486273471"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
 
+- titulo: "A Theory of Fun"
+  autor: "Raph Koster"
+  año: 
+  editorial: 
+  isbn-13: "978-1932111972"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
 
+- titulo: "Achievement Relocated"
+  autor: "Geoff Engelstein"
+  año: 
+  editorial: 
+  isbn-13: "978-0262043533"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Board Game Design Advice from the Best in the Industry"
+  autor: "Gabe Barrett"
+  año: 
+  editorial: 
+  isbn-13: "978-1094914244"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Board Game Designers Guide to Getting Published"
+  autor: "Joe Slack"
+  año: 
+  editorial: 
+  isbn-13: "978-1775189220"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Building Blocks of Tabletop Game Design"
+  autor:
+    - "Geoff Engelstein" 
+    - "Isaac Shalev"
+  año: 
+  editorial: 
+  isbn-13: "978-1138365490"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Cardboard Ghosts: Using Physical Games to Model and Critique Systems"
+  autor: "Amabel Holland"
+  año: 
+  editorial: 
+  isbn-13: "978-1032813448"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Characteristics of Games"
+  autor: 
+    - "Skaff Elias"
+    - "Richard Garfield"
+  año: 
+  editorial: 
+  isbn-13: "978-0262542692"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Designing Board Games - Volume 1: Game Structure"
+  autor: "Enrico Feresin"
+  año: 
+  editorial: 
+  isbn-13: "978-8826051895"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Dice Games Properly Explained"
+  autor: "Reiner Knizia"
+  año: 
+  editorial: 
+  isbn-13: "979-8320754154"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Game Design Workshop"
+  autor: "Tracy Fullerton"
+  año: 
+  editorial: 
+  isbn-13: "978-1138098770"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Game Production"
+  autor: "Geoff Engelstein"
+  año: 
+  editorial: 
+  isbn-13: "978-1032034935"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "GameTek"
+  autor: "Geoff Engelstein"
+  año: 
+  editorial: 
+  isbn-13: "978-1538144015"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Graphic Design for Board Games"
+  autor: "Daniel Solis"
+  año: 
+  editorial: 
+  isbn-13: "978-0996268639"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Kobold Guide to Board Game Design"
+  autor: "Selinker, Howell, et al"
+  año: 
+  editorial: 
+  isbn-13: "978-1936781041"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Make Your Own Board Game: Designing, Building, and Playing an Original Tabletop Game"
+  autor: "Jesse Daniels"
+  año: 
+  editorial: 
+  isbn-13: "978-1648768972"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Rules of Play: Game Design Fundamentals"
+  autor: "Katie Tekinbas, Eric Zimmerman"
+  año: 
+  editorial: 
+  isbn-13: "978-0262240451"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Tabletop Game Accessibility"
+  autor: "Michael James Heron"
+  año: 
+  editorial: 
+  isbn-13: "978-1032119373"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Tabletop RPG Design in Theory and Practice at the Forge"
+  autor: "William White"
+  año: 
+  editorial: 
+  isbn-13: "978-1138638716"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "The Art of Game Design: A Book of Lenses"
+  autor: "Jesse Schell"
+  año: 
+  editorial: 
+  isbn-13: "978-1138632059"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "The Board Game Designer's Guide To Careers In The Industry"
+  autor: "Joe Slack"
+  año: 
+  editorial: 
+  isbn-13: "978-1777517922"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Thematic Integration in Board Game Design"
+  autor: "Sarah Shipp"
+  año: 
+  editorial: 
+  isbn-13: "978-1032400754"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Think Like a Game Designer"
+  autor: "Justin Gary"
+  año: 
+  editorial: 
+  isbn-13: "978-0999586303"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Uncertainty in Games"
+  autor: "Greg Costikyan"
+  año: 
+  editorial: 
+  isbn-13: "978-0262018968"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "White Box Essays"
+  autor: "Jeremy Holcomb"
+  año: 
+  editorial: 
+  isbn-13: "978-1981253395"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "You Said This Would Be Fun: What makes a game good and how to make a good game"
+  autor: "Jeff Warrender"
+  año: 
+  editorial: 
+  isbn-13: "978-1648582622"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
+
+- titulo: "Your Turn!: The Guide to Great Tabletop Game Design"
+  autor: "Scott Rogers"
+  año: 
+  editorial: 
+  isbn-13: "978-1032041865"
+  cover: 
+  genero: 
+  paginas: 
+  idioma: 
+  tags: 
+    - 
+  posesión: 
+  leido: 
+  formato: 
+  notas: 
 
 #
 ### Don't delete this lines, are here to help others to add books to the yml.

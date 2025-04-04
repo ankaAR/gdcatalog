@@ -1,0 +1,7 @@
+# Default ignores
+node_modules/
+dist/
+.env
+
+# Ignore the stage folder
+stage/

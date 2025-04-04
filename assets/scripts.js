@@ -51,6 +51,16 @@ async function cargarYAML(categoria, ruta) {
     }
 }
 
+// Función para actualizar el conteo de libros
+function actualizarConteoLibros(categoria, total, filtrados) {
+    if (categoria === 'libros') {
+        const header = document.querySelector(`#${categoria} h2`);
+        if (header) {
+            header.textContent = `Libros (mostrando ${filtrados} de ${total})`;
+        }
+    }
+}
+
 // Función para mostrar los elementos en la interfaz
 function mostrarElementos(categoria, elementos) {
     const contenedor = document.querySelector(`#${categoria} .items-container`);
@@ -58,9 +68,12 @@ function mostrarElementos(categoria, elementos) {
     
     if (elementos.length === 0) {
         contenedor.innerHTML = '<p>No hay elementos para mostrar.</p>';
+        actualizarConteoLibros(categoria, datos[categoria].length, 0);
         return;
     }
-    
+
+    actualizarConteoLibros(categoria, datos[categoria].length, elementos.length);
+
     elementos.forEach(elemento => {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'item';
@@ -125,7 +138,7 @@ function generarNubeDeEtiquetas() {
             return item.tags || []; // Usar 'tags' para podcasts y video channels
         }
         return item.tags || []; // Usar 'tags' para otras categorías
-    });
+    }).filter(etiqueta => etiqueta); // Ignorar etiquetas nulas o vacías
 
     const conteoEtiquetas = todasLasEtiquetas.reduce((conteo, etiqueta) => {
         conteo[etiqueta] = (conteo[etiqueta] || 0) + 1;
